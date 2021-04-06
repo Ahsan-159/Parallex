@@ -55,3 +55,54 @@
     background-repeat: no-repeat;
     color: white;
 }
+.btn-ef{
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+     border: 1px solid blue;
+     padding: 5px 10px;
+     text-decoration: none;
+     transition: all 0.5s ease 0s;
+     margin-left: 30px;
+            }
+            .btn-ef::after{
+                content:"";
+                position: absolute;
+                background:#c0392b;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 0%;
+                height: 100%;
+                transition: all 0.7s ease 0s;
+            }
+            .btn-ef:hover{
+                color: white;
+                border: none;
+                
+            }
+            .btn-ef:hover::after{
+                width: 100%;
+               
+            }
+            .img-opa img{
+                opacity:0.7;
+            }
+            .img-opa img:hover{
+                opacity: 1.0;
+            }
+            
+            @media screen and (max-width: 550px) {
+                
+            .responsee{
+                text-align: center;
+                padding: 0px;
+            }
+            .responsee ul{
+                list-style: none;
+
+            }
+            .responsee ul li {
+                padding: 0px;
+            }
+            }
